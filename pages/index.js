@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Script from 'next/script'
+import { useRef } from 'react'
+import { Helmet } from 'react-helmet'
+import Calendar from '../components/Calendar'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +21,7 @@ export default function Home() {
           Hola Mundo:)
         </h1>
       </main>
-
+      <Calendar />
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
