@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
 import { useRef } from 'react'
-import { Helmet } from 'react-helmet'
 import Calendar from '../components/Calendar'
 
 export default function Home() {
