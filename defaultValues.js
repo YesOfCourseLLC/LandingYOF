@@ -1,0 +1,1 @@
+export const sdkUrl = process.env.NEXT_PUBLIC_URL_SDK
