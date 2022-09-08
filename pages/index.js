@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Hola Mundo:)
+          Hola Muundo:)
         </h1>
       </main>
       <Calendar />
