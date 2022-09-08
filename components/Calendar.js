@@ -5,7 +5,7 @@ import { ownUrl, sdkUrl } from '../defaultValues'
 const Calendar = () => {
     const iframeCalendar = useRef(null)
     const [stripe, setStripe] = useState(null)
-    
+
     return (
         <>
             <div ref={iframeCalendar}>Calendar</div>
