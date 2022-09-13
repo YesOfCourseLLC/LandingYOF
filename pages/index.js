@@ -7,6 +7,8 @@ import { Helmet } from 'react-helmet'
 import Calendar from '../components/Calendar'
 import Vibes from '../components/Containers/Vibes'
 import Layout from '../components/Layout/Layout'
+import ResidentialCleaning from '../components/Containers/Residential'
+import GiftPoints from '../components/Containers/GiftPoints'
 
 export default function Home() {
 
@@ -19,6 +21,8 @@ export default function Home() {
       </Head>
       <Layout>
         <Vibes />
+        <ResidentialCleaning />
+        <GiftPoints />
       </Layout>
     </main>
   )

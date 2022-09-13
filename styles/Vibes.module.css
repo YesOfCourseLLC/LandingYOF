@@ -9,6 +9,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
+    width: 100%;
+}
+
+.imgV {
+    width: 100%;
+}
+
+.titleScreenOne {
+    color: var(--secundary-blue);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.buttonBookme {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 3rem;
     width: 10rem;
 }
