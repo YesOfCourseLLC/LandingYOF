@@ -22,12 +22,8 @@
     text-align: center;
 }
 
-.buttonBookme {
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 999px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    height: 3rem;
-    width: 10rem;
-}
+@media (min-width: 425px) {
+    .figureLogo {
+        width: 50%;
+    } 
+  }

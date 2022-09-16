@@ -2,8 +2,74 @@
     background-color: var(--yellow);
     border: none;
     border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     font-size: 1.2rem;
     font-weight: 600;
     height: 3rem;
     width: 10rem;
 }
+
+.imgV {
+    width: 100%;
+}
+
+.imgGif {
+    position: absolute;
+    width: 100%;
+}
+
+.figureLogoV {
+    position: absolute;
+    width: 100%;
+}
+
+.figureLogo {
+    position: absolute;
+    margin-top: 60%;
+    width: 50%;
+}
+
+.containerImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.containerTexts {
+    margin-top: 23%;
+}
+
+.spanWhen {
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.residentialText {
+    text-align: center;
+}
+
+@media (min-width: 425px) {
+    .containerImages {
+        height: 50vh;
+    }  
+  }
+
+
+  @media (min-width: 768px) {
+    .containerTexts {
+        margin-top: 35%;
+    }    
+  }
+
+  @media (min-width: 1440px) {
+    .containerImages {
+        height: 85vh;
+    }    
+  }

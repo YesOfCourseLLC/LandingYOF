@@ -4,12 +4,21 @@
     text-align: center;
 }
 
-.buttonBookme {
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 999px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    height: 3rem;
-    width: 10rem;
+.residentialText {
+    text-align: center;
 }
+
+.residentialText {
+    text-align: center;
+}
+
+.services {
+    margin-bottom: 12%;
+}
+
+@media (min-width: 768px) {
+    .services {
+        margin-bottom: 20%;
+    }    
+  }
+
