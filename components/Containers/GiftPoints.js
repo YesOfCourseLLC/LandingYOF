@@ -18,7 +18,7 @@ const GiftPoints = () => {
             <div className={styles.containerTexts}>
                 <p className={styles.residentialText}>We believe in our clients, so we work to generate greater benefits for our most loyal clients. For every 5 points, there is a $2 discount to use whenever you want.</p>
                 <ButtonBookMe />
-                <span className={styles.spanWhen}>*When you make a reservation with us, don't forget your user login, or your could lose your gifts.</span>
+                <span className={styles.spanWhen}>*When you make a reservation with us, don&apos;t forget your user login, or your could lose your gifts.</span>
             </div>
 
         </section>
