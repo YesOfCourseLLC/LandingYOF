@@ -20,10 +20,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main>
+        <main className='px-8'>
+          <section className='px-2 shadow-md shadow-gray-400'>
           <Vibes />
           <ResidentialCleaning />
           <GiftPoints />
+          </section>
         </main>
       </Layout>
     </>
