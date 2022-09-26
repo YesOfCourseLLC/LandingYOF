@@ -6,7 +6,7 @@ import ButtonBookMe from '../Components/ButtonBookMe'
 
 const Vibes = () => {
     return (
-        <main className='px-8'>
+        <section className='px-8 pt-16'>
             <section className={styles.vibesContainer}>
                 <figure className={styles.figureLogo}>
                     <img className={styles.imgV} src="/images/logos/1-logo.png" alt="logo" />
@@ -14,7 +14,7 @@ const Vibes = () => {
                 <h1 className={styles.titleScreenOne}>NEW VIBES FOR YOUR HOME</h1>
                 <ButtonBookMe />
             </section>
-        </main>
+        </section>
     )
 }
 

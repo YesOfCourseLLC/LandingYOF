@@ -1,11 +1,13 @@
 .titleResidential, .titleAirbnb {
     color: var(--secundary-blue);
     font-size: 2rem;
+    margin: 2rem 0;
     text-align: center;
 }
 
 .residentialText {
     text-align: center;
+    margin: 2rem 0;
 }
 
 .residentialText {
@@ -19,7 +21,12 @@
 
 @media (min-width: 768px) {
     .services {
-        margin-bottom: 20%;
+        margin-bottom: 16%;
     }    
   }
 
+  @media (min-width: 1440px) {
+    .services {
+        margin-bottom: 11%;
+    }
+  }

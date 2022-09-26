@@ -9,6 +9,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     height: 3rem;
+    margin-top: 2rem;
     width: 10rem;
 }
 
@@ -71,5 +72,15 @@
   @media (min-width: 1440px) {
     .containerImages {
         height: 85vh;
-    }    
+    }
+    .figureLogoV {
+        width: 70%;
+    }
+    .figureLogo {
+        margin-top: 40%;
+        width: 30%;
+    }
+    .containerTexts {
+        margin-top: 15%;
+    }  
   }
