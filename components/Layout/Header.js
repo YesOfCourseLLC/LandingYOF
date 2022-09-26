@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Switch } from '@headlessui/react'
-import Example from '../Components/Menu'
+import CircleMenu from '../Components/Menu'
 
 const Header = () => {
   const [enabled, setEnabled] = useState(false)
@@ -33,7 +33,7 @@ const Header = () => {
         </Switch>
       </div>
       <nav className='w-full flex justify-end items-center overflow-x-clip pr-8'>
-            <Example />
+            <CircleMenu />
       </nav>
     </header>
   )

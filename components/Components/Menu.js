@@ -1,7 +1,7 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
 
-export default function Example() {
+export default function CircleMenu() {
     return (
         <div className="top-16 w-auto text-right">
             <Menu as="div" className="relative inline-block text-left z-20">
