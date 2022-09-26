@@ -24,9 +24,3 @@
         margin-bottom: 16%;
     }    
   }
-
-  @media (min-width: 1440px) {
-    .services {
-        margin-bottom: 11%;
-    }
-  }
