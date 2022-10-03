@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --white: #fdfffc;
+  --black: #0d1117;
+  --primary-blue: #00effc;
+  --secundary-blue: #00c7d1;
+  --yellow: #f9e715;
+}
+
 html,
 body {
   padding: 0;
@@ -14,7 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +35,11 @@ a {
     color: white;
     background: black;
   }
+}
+ */
+
+ @media (min-width: 768px) {
+  p, ul {
+    font-size: 1.5rem;
+  }  
 }

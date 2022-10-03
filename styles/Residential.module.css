@@ -1,0 +1,51 @@
+.titleResidential, .titleAirbnb {
+    color: var(--secundary-blue);
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.residentialText {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.residentialText {
+    text-align: center;
+}
+
+.services {
+    margin-bottom: 12%;
+    padding: 0 2rem;
+    margin-top: 7rem;
+}
+
+.containerStand {
+    height: 17rem;
+    margin-top: 3rem;
+    width: 14rem;
+}
+
+.imgRectangle2 {
+    height: 17rem;
+    margin: auto;
+    width: 12rem;
+}
+
+.imgStand {
+    bottom: 16rem;
+}
+
+.imgStand, .imgStandTwo {
+    margin: auto;
+    height: 15rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .services {
+        margin-bottom: 16%;
+    }    
+  }

@@ -1,0 +1,110 @@
+.buttonBookme {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 3rem;
+    margin-top: 2rem;
+    width: 10rem;
+}
+
+.imgV {
+    width: 100%;
+}
+
+.imgGif {
+    position: absolute;
+    width: 100%;
+}
+
+.figureLogoV {
+    position: absolute;
+    width: 100%;
+}
+
+.figureLogo {
+    position: absolute;
+    margin-top: 60%;
+    width: 50%;
+}
+
+.containerImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.containerTexts {
+    margin-top: 27%;
+}
+
+.spanWhen {
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.residentialText {
+    text-align: center;
+    margin: 3.5rem 0;
+    font-weight: 500;
+}
+
+.containerClean {
+    margin: auto;
+    width: 100%;
+    max-width: 21rem;
+    height: 17rem;
+}
+
+.imgClean {
+    position: relative;
+    bottom: 12.5rem;
+    left: 0.25rem;
+}
+
+@media (min-width: 425px) {
+    
+    .containerImages {
+        height: 40vh;
+    }  
+  }
+
+
+  @media (min-width: 768px) {
+    .containerTexts {
+        margin-top: 30%;
+    }    
+  }
+
+  @media (min-width: 1024px) {
+    
+    .figureLogoV {
+        width: 90%;
+    }
+    .figureLogo {
+        margin-top: 40%;
+        width: 35%;
+    }
+    .containerTexts {
+        margin-top: 20%;
+    } 
+  }
+
+  @media (min-width: 1440px) {
+    .containerImages {
+        height: 85vh;
+    }
+    .figureLogoV {
+        width: 70%;
+    }
+  }

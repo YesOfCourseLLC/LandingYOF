@@ -1,0 +1,54 @@
+.vibesContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.figureLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgV {
+    width: 100%;
+}
+
+.figureCleaning {
+    width: auto;
+    height: 13rem;
+    margin: 3rem auto;
+}
+
+.imageCleaningBath {
+    position: relative;
+    width: 18rem;
+    top: -13rem;
+    margin: auto;
+}
+
+.titleScreenOne {
+    color: var(--secundary-blue);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+@media (min-width: 425px) {
+    .figureCleaning {
+        max-width: 25rem;
+    }
+  }
+
+
+@media (min-width: 640px) {
+    .figureLogo {
+    width: 80%;
+    }
+}
+
+
+  
