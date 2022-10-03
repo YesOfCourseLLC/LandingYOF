@@ -48,17 +48,34 @@
 .spanWhen {
     display: inline-block;
     text-align: center;
-    font-weight: 200;
+    font-weight: 500;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .residentialText {
     text-align: center;
+    margin: 3.5rem 0;
+    font-weight: 500;
+}
+
+.containerClean {
+    margin: auto;
+    width: 100%;
+    max-width: 21rem;
+    height: 17rem;
+}
+
+.imgClean {
+    position: relative;
+    bottom: 12.5rem;
+    left: 0.25rem;
 }
 
 @media (min-width: 425px) {
+    
     .containerImages {
-        height: 50vh;
+        height: 40vh;
     }  
   }
 

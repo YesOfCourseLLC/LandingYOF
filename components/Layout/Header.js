@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center h-24'>
       <nav className='fixed flex justify-between w-full pl-8 items-center h-24 bg-white shadow-gray-200 shadow-md z-10'>
-      <div>
+      {/* <div>
         <Switch
           checked={enabled}
           onChange={setEnabled}
@@ -32,7 +32,7 @@ const Header = () => {
             }
           </span>
         </Switch>
-      </div>
+      </div> */}
       <div className='w-full flex justify-end items-center overflow-x-clip pr-8'>
             <CircleMenu />
       </div>
