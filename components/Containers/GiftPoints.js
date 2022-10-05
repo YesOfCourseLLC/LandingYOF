@@ -6,7 +6,7 @@ import ButtonBookMe from '../Components/ButtonBookMe'
 
 const GiftPoints = () => {
     return (
-        <section className="px-8">
+        <section className="px-8 dark:text-white">
             <div className={styles.containerImages}>
                 <figure className={styles.figureLogoV}>
                     <img className={styles.imgV} src="/images/backgroundpoints.png" alt="happy family" />

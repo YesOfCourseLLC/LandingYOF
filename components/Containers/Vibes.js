@@ -4,7 +4,8 @@ import Link from 'next/link'
 import styles from '../../styles/Vibes.module.css'
 import ButtonBookMe from '../Components/ButtonBookMe'
 
-const Vibes = () => {
+const Vibes = ({ enabled, setEnabled }) => {
+    console.log(enabled)
     return (
         <>
             <section className='pt-16 px-8'>
@@ -17,7 +18,7 @@ const Vibes = () => {
                 </section>
             </section>
             <figure className={`${styles.figureCleaning} pt-8`}>
-                <img className='w-full' src='/images/figures/Path20.svg' />
+                <img className='w-full' src={`${enabled ? '/images/figures/IMG-20220930-WA0028.jpg' : '/images/figures/Path20.svg' }`} />
                 <img className={styles.imageCleaningBath} src='/images/7.png' alt='cleaning bath' />
             </figure>
         </>

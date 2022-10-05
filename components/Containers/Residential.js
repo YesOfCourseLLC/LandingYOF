@@ -7,11 +7,11 @@ import ButtonBookMe from '../Components/ButtonBookMe'
 const ResidentialCleaning = () => {
     return (
         <>
-            <section className={styles.services}>
+            <section className={`${styles.services} dark:text-white`}>
                 <h2 className={styles.titleResidential}>Residential Cleaning</h2>
                 <p className={styles.residentialText}>We take care of cleaning your home, you may be calm at work or your vacation.</p>
                 
-                <div className='flex flex-wrap justify-center'>
+                <div className='flex flex-wrap justify-center dark:text-white'>
                     <ul className='services-residential_list list-disc pl-4 font-medium mb-8'>
                     <li>Bedrooms & Living Rooms</li>
                     <li>Bathrooms</li>
@@ -29,8 +29,8 @@ const ResidentialCleaning = () => {
                 </div>
                 
                 <h2 className={styles.titleAirbnb}>AirBnb Cleaning</h2>
-                <p className={styles.residentialText}>Your property will be in the best hands for a fast and efficent cleaning, your clients will feel like a home.</p>
-                <div className='flex flex-wrap justify-center'>
+                <p className={`${styles.residentialText} dark:text-white`}>Your property will be in the best hands for a fast and efficent cleaning, your clients will feel like a home.</p>
+                <div className='flex flex-wrap justify-center dark:text-white'>
                    <ul className='services-airbnb_list list-disc pl-4 font-medium'>
                     <li>Bedrooms & Living Rooms</li>
                     <li>Bathrooms</li>
