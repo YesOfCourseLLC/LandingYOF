@@ -3,7 +3,7 @@ import { Switch } from '@headlessui/react'
 import CircleMenu from '../Components/Menu'
 import { publicEnv } from '../../defaultValues'
 
-const DarkMode = ({ enabled, setEnabled }) => {
+const DarkMode = ({ locale, enabled, setEnabled }) => {
   return (
     <>
         {publicEnv === 'development' &&
@@ -33,7 +33,7 @@ const DarkMode = ({ enabled, setEnabled }) => {
             </Switch>
           </div>}
         <div className='w-full flex justify-end items-center overflow-x-clip pr-8'>
-          <CircleMenu />
+          <CircleMenu locale={locale} />
         </div>
     </>
   )

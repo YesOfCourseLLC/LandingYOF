@@ -1,10 +1,13 @@
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../../styles/GiftPoints.module.css'
 import ButtonBookMe from '../Components/ButtonBookMe'
+import en from '../../locales/en'
+import es from '../../locales/es'
 
-const GiftPoints = () => {
+const GiftPoints = ({ locale }) => {
+
+    const len = locale === 'en-US' ? en : es;
+
     return (
         <section className="px-8 dark:text-white">
             <div className={styles.containerImages}>
@@ -16,13 +19,13 @@ const GiftPoints = () => {
                 </figure>
             </div>
             <div className={styles.containerTexts}>
-                <p className={styles.residentialText}>We believe in our clients, so we work to generate greater benefits for our most loyal clients. For every 5 points, there is a $2 discount to use whenever you want.</p>
+                <p className={styles.residentialText}>{len.discount}</p>
                 <figure className={styles.containerClean}>
                     <img className='w-full' src='/images/figures/IMG-20220930-WA0023.jpg' />
                     <img className={styles.imgClean} src='/images/5.png' />
                 </figure>
                 <ButtonBookMe />
-                <span className={styles.spanWhen}>*When you make a reservation with us, don&apos;t forget your user login, or your could lose your gifts.</span>
+                <span className={styles.spanWhen}>{len.gifAlert}</span>
             </div>
         </section>
     )

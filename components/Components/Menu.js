@@ -1,10 +1,12 @@
 import { Menu, Transition } from '@headlessui/react'
-import { useRouter } from 'next/router'
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment } from 'react'
+import en from '../../locales/en'
+import es from '../../locales/es'
 
-export default function CircleMenu() {
+export default function CircleMenu({ locale }) {
 
-    const router = useRouter()
+    const len = locale === 'en-US' ? en : es;
+    console.log(locale)
     return (
         <div className="top-16 w-auto text-right">
             <Menu as="div" className="relative inline-block text-left z-20">
@@ -31,7 +33,7 @@ export default function CircleMenu() {
                                     <button
                                         className={`text-white group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                                     >
-                                        Home
+                                        {len.home}
                                     </button>
                                 )}
                             </Menu.Item>
@@ -42,7 +44,7 @@ export default function CircleMenu() {
                                     <button
                                         className={`text-white group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                                     >
-                                        Services
+                                        {len.services}
                                     </button>
                                 )}
                             </Menu.Item>
