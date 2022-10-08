@@ -3,15 +3,34 @@ import Vibes from '../components/Containers/Vibes'
 import Layout from '../components/Layout/Layout'
 import ResidentialCleaning from '../components/Containers/Residential'
 import GiftPoints from '../components/Containers/GiftPoints'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 export default function Home() {
+  let getItem;
+  let value
+  if (typeof window !== 'undefined') {
+    getItem = localStorage.getItem('mode')
+    if (getItem === null) {
+      localStorage.setItem('mode', JSON.stringify(false))
+    }
+  }
 
-  const [enabled, setEnabled] = useState(false)
+  let [enabled, setEnabled] = useState(value)
   const router = useRouter();
   const { locale } = router;
- 
+
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('mode', enabled)
+  }
+  useEffect(() => {
+    if (getItem === 'true') {
+      setEnabled(true)
+    } else {
+      setEnabled(false)
+    }
+  }, [])
+
   return (
     <>
       <Head>
@@ -22,9 +41,9 @@ export default function Home() {
       <Layout locale={locale} enabled={enabled} setEnabled={setEnabled}>
         <main className={`${enabled === true && 'dark'}`}>
           <section className='pb-12 dark:bg-black'>
-          <Vibes locale={locale} enabled={enabled} setEnabled={setEnabled} />
-          <ResidentialCleaning locale={locale} />
-          <GiftPoints locale={locale} />
+            <Vibes locale={locale} enabled={enabled} setEnabled={setEnabled} />
+            <ResidentialCleaning locale={locale} enabled={enabled} />
+            <GiftPoints locale={locale} enabled={enabled} />
           </section>
         </main>
       </Layout>

@@ -9,8 +9,8 @@ export default {
         'Ventanas',
         'Parede-Pisos y alfombras al vacío',
     ],
-    airbnbCleaning: 'Airbnb Cleaning',
-    airbnbCleaningDescription: 'Your property will be in the best hands for a fast and efficient cleaning, your clients will feel like a home.',
+    airbnbCleaning: 'Limpieza Airbnb',
+    airbnbCleaningDescription: 'Su propiedad estará en las mejores manos para una limpieza rápida y eficaz, sus clientes se sentirán como en casa.',
     airbnbCleaningList: [
         'Dormitorios y salones',
         'Baños',

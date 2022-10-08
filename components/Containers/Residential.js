@@ -1,12 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../../styles/Residential.module.css'
 import ButtonBookMe from '../Components/ButtonBookMe'
 import en from '../../locales/en'
 import es from '../../locales/es'
 
-const ResidentialCleaning = ({ locale }) => {
+const ResidentialCleaning = ({ locale, enabled }) => {
 
     const len = locale === 'en-US' ? en : es;
 
@@ -20,12 +18,12 @@ const ResidentialCleaning = ({ locale }) => {
                     <ul className='services-residential_list list-disc pl-4 font-medium mb-8'>
                         {
                             len.listTakeCare.map((element) => (
-                                <li>{element}</li>
+                                <li key={element}>{element}</li>
                             ))
                         }
                     </ul>
                     <figure className={styles.containerStand}>
-                        <img className={styles.imgRectangle2} src='/images/figures/Rectangle2.svg' />
+                        <img className={styles.imgRectangle2} src={`${enabled ? '/images/figures/Rectangle21.svg' : '/images/figures/Rectangle2.svg'}`} />
                         <img className={styles.imgStand} src='/images/9.png' alt='cleaning' />
                     </figure>
                 </div>
@@ -35,11 +33,12 @@ const ResidentialCleaning = ({ locale }) => {
                     <ul className='services-airbnb_list list-disc pl-4 font-medium'>
                         {
                             len.airbnbCleaningList.map((element) => (
-                                <li>{element}</li>
+                                <li key={element}>{element}</li>
                             ))
                         }
                     </ul>
                     <figure className={styles.containerStandTwo}>
+                        <img className='w-full h-56' src={`${enabled ? '/images/figures/Path211.svg' : '/images/figures/Path21.svg' }`} />
                         <img className={styles.imgStandTwo} src='/images/2.png' />
                     </figure>
                 </div>

@@ -6,7 +6,7 @@ import ButtonBookMe from '../Components/ButtonBookMe'
 import en from '../../locales/en'
 import es from '../../locales/es'
 
-const Vibes = ({ locale, enabled, setEnabled }) => {
+const Vibes = ({ locale, enabled, setenabled }) => {
 
     const len = locale === 'en-US' ? en : es;
 
@@ -22,7 +22,7 @@ const Vibes = ({ locale, enabled, setEnabled }) => {
                 </section>
             </section>
             <figure className={`${styles.figureCleaning} pt-8`}>
-                <img className='w-full' src={`${enabled ? '/images/figures/IMG-20220930-WA0028.jpg' : '/images/figures/Path20.svg' }`} />
+                <img className='w-full' src={`${enabled ? '/images/figures/Path201.svg' : '/images/figures/Path20.svg' }`} />
                 <img className={styles.imageCleaningBath} src='/images/7.png' alt='cleaning bath' />
             </figure>
         </>
