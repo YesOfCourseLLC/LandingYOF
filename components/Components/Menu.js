@@ -8,7 +8,7 @@ export default function CircleMenu({ locale }) {
     const router = useRouter()
     const len = locale === 'en-US' ? en : es;
     return (
-        <div className="top-16 w-auto text-right">
+        <div className="top-6 absolute w-auto text-right">
             <Menu as="div" className="relative inline-block text-left z-20">
                 <div className='z-20 relative'>
                     <Menu.Button className="inline-flex items-center justify-center bg-primary-blue rounded-full h-12 w-12 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
