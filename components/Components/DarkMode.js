@@ -17,8 +17,8 @@ const DarkMode = ({ locale, enabled, setEnabled }) => {
           <span className="sr-only">Use setting</span>
           <span
             aria-hidden="true"
-            className={`${enabled ? 'translate-x-9 bg-black' : 'translate-x-0'}
-              flex justify-center items-center pointer-events-none h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+            className={`${enabled ? 'translate-x-9 bg-black' : 'translate-x-0 bg-white'}
+              flex justify-center items-center pointer-events-none h-[34px] w-[34px] transform rounded-full shadow-lg ring-0 transition duration-200 ease-in-out`}
           >
             {
               enabled ? (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-6 h-6">
