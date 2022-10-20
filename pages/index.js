@@ -39,8 +39,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout locale={locale} enabled={enabled} setEnabled={setEnabled}>
-        <main className={`${enabled === true && 'dark transition ease-in-out delay-150'}`}>
-          <section className='pb-12 dark:bg-black'>
+        <main className={`${enabled === true && 'transition ease-in-out delay-150 bg-black text-white'} transition ease-in-out delay-150`}>
+          <section className='pb-12 mx-8 lg:mx-60'>
             <Vibes locale={locale} enabled={enabled} setEnabled={setEnabled} />
             <ResidentialCleaning locale={locale} enabled={enabled} />
             <GiftPoints locale={locale} enabled={enabled} />

@@ -22,7 +22,7 @@ const Vibes = ({ locale, enabled, setenabled }) => {
                 </section>
             </section>
             <figure className={`${styles.figureCleaning} pt-8`}>
-                <img className='w-full' src={`${enabled ? '/images/figures/Path201.svg' : '/images/figures/Path20.svg' }`} />
+                <img className='w-full transition ease-in-out delay-200' src={`${enabled ? '/images/figures/Path201.svg' : '/images/figures/Path20.svg' }`} />
                 <img className={styles.imageCleaningBath} src='/images/7.png' alt='cleaning bath' />
             </figure>
         </>

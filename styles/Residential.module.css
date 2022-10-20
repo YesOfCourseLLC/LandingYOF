@@ -24,7 +24,6 @@
 
 .containerStand {
     height: 17rem;
-    margin-top: 3rem;
     width: 14rem;
 }
 
@@ -61,5 +60,9 @@
 @media (min-width: 768px) {
     .services {
         margin-bottom: 16%;
-    }    
+    }
+    .containerStandTwo {
+        margin-left: inherit;
+        margin-right: inherit;
+    }
   }

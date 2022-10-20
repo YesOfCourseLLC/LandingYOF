@@ -21,7 +21,7 @@ const GiftPoints = ({ locale, enabled }) => {
                 <p className={styles.residentialText}>{len.discount}</p>
                 <div className={styles.containerClean}>
                     <figure className='h-36'>
-                        <img className='w-full' src={`${enabled ? '/images/figures/Rectangle31.svg' : '/images/figures/Rectangle3.svg' }`} />
+                        <img className='w-full transition ease-in-out delay-150' src={`${enabled ? '/images/figures/Rectangle31.svg' : '/images/figures/Rectangle3.svg' }`} />
                     </figure>
                     <figure>
                         <img className={styles.imgClean} src='/images/5.png' />

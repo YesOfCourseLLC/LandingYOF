@@ -39,11 +39,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-}
-
-.containerTexts {
-    margin-top: 27%;
+    height: 20rem;
+    margin-bottom: 30%;
 }
 
 .spanWhen {
@@ -73,39 +70,17 @@
     left: 0.25rem;
 }
 
-@media (min-width: 425px) {
-    
-    .containerImages {
-        height: 40vh;
-    }  
-  }
-
-
-  @media (min-width: 768px) {
-    .containerTexts {
-        margin-top: 30%;
-    }    
-  }
-
-  @media (min-width: 1024px) {
-    
-    .figureLogoV {
-        width: 90%;
-    }
+  @media (min-width: 640px) {
     .figureLogo {
+        position: relative;
+        width: 30%;
         margin-top: 40%;
-        width: 35%;
-    }
-    .containerTexts {
-        margin-top: 20%;
-    } 
-  }
-
-  @media (min-width: 1440px) {
-    .containerImages {
-        height: 85vh;
+        position: relative;
     }
     .figureLogoV {
-        width: 70%;
+        width: 50%;
+    }
+    .containerImages {
+        margin-bottom: 15%;
     }
   }
