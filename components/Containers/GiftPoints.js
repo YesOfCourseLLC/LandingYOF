@@ -1,28 +1,34 @@
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../../styles/GiftPoints.module.css'
 import ButtonBookMe from '../Components/ButtonBookMe'
+import en from '../../locales/en'
+import es from '../../locales/es'
 
-const GiftPoints = () => {
+const GiftPoints = ({ locale, enabled }) => {
+
+    const len = locale === 'en-US' ? en : es;
     return (
-        <section className="px-8">
+        <section className="px-8 dark:text-white">
             <div className={styles.containerImages}>
                 <figure className={styles.figureLogoV}>
-                    <img className={styles.imgV} src="/images/backgroundpoints.png" alt="happy family" />
+                    <img className={styles.imgV} src="/images/family.png" alt="happy family" />
                 </figure>
                 <figure className={styles.figureLogo}>
                     <img className={styles.imgV} src="/images/cup.png" alt="illustration gift points" />
                 </figure>
             </div>
             <div className={styles.containerTexts}>
-                <p className={styles.residentialText}>We believe in our clients, so we work to generate greater benefits for our most loyal clients. For every 5 points, there is a $2 discount to use whenever you want.</p>
-                <figure className={styles.containerClean}>
-                    <img className='w-full' src='/images/figures/IMG-20220930-WA0023.jpg' />
-                    <img className={styles.imgClean} src='/images/5.png' />
-                </figure>
+                <p className={styles.residentialText}>{len.discount}</p>
+                <div className={styles.containerClean}>
+                    <figure className='h-36'>
+                        <img className='w-full transition ease-in-out delay-150' src={`${enabled ? '/images/figures/Rectangle31.svg' : '/images/figures/Rectangle3.svg' }`} />
+                    </figure>
+                    <figure>
+                        <img className={styles.imgClean} src='/images/5.png' />
+                    </figure>
+                </div>
                 <ButtonBookMe />
-                <span className={styles.spanWhen}>*When you make a reservation with us, don&apos;t forget your user login, or your could lose your gifts.</span>
+                <span className={styles.spanWhen}>{len.gifAlert}</span>
             </div>
         </section>
     )

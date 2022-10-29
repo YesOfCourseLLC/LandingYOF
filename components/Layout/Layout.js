@@ -2,10 +2,10 @@ import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 
-const Layout = ({ children }) => {
+const Layout = ({ locale, enabled, setEnabled, children }) => {
   return (
     <>
-      <Header />
+      <Header locale={locale} enabled={enabled} setEnabled={setEnabled} />
       {children}
       <Footer />
     </>

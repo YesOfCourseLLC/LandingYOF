@@ -1,0 +1,26 @@
+export default {
+    newVibes: 'NUEVAS VIBRAS PARA TU HOGAR',
+    residentialCleaning: 'Limpieza residencial',
+    takeCare: 'Nos encargamos de la limpieza de tu hogar, puedes estar tranquilo en el trabajo o en tus vacaciones.',
+    listTakeCare: [
+        'Dormitorios y salones',
+        'Baños',
+        'Cocina' ,
+        'Ventanas',
+        'Parede-Pisos y alfombras al vacío',
+    ],
+    airbnbCleaning: 'Limpieza Airbnb',
+    airbnbCleaningDescription: 'Su propiedad estará en las mejores manos para una limpieza rápida y eficaz, sus clientes se sentirán como en casa.',
+    airbnbCleaningList: [
+        'Dormitorios y salones',
+        'Baños',
+        'Cocina' ,
+        'Ventanas',
+        'Parede-Pisos y alfombras al vacío',
+        'Platos sucios',
+    ],
+    discount: 'Nos esforzamos por nuestros clientes mas fieles trayendo mayores beneficios, por lo tanto, cada 5 puntos en tu cuenta se veran reflejados como un descuento de $2 en futuras reservaciones.',
+    gifAlert: `*Cuando hagas reservas no olvides iniciar con el mismo usuario siempre y asi no perderte de tus puntos acumulados y futuros beneficios.`,
+    home: 'Inicio',
+    services: 'Servicios',
+}
